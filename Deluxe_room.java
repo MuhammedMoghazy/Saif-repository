@@ -9,5 +9,7 @@ package safwa_project;
  * @author Cyber
  */
 public class Deluxe_room {
-    
+    public Deluxe_room(int room_num) {
+        super(room_num, "Deluxe");
+    }
 }
