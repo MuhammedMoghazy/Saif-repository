@@ -1,0 +1,48 @@
+package hotel_system;
+import java.util.ArrayList;
+
+public class Staff_Management {
+public class StaffManager {
+ abstract class Staff {
+    protected String name;
+    protected String role;
+
+    public Staff(String name, String role) {
+        this.name = name;
+        this.role = role;
+        
+    }
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getRole() {
+            return role;
+        }
+
+        public void setRole(String role) {
+            this.role = role;
+        }
+    
+}
+public class Receptionist extends Staff {
+    public Receptionist(String name) {
+        super(name, "Receptionist");
+    }
+}
+public class Housekeeping extends Staff {
+    public Housekeeping(String name) {
+        super(name, "Housekeeping");
+    }
+}
+public class Manager extends Staff {
+    public Manager(String name) {
+        super(name, "Manager");
+    }
+}
+}
+}
